@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:contentDescription="@string/app_name"
+    android:fillViewport="true"
+    android:scrollbarSize="24dp"
+    tools:context=".BiographyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_early_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif-monospace"
+            android:text="Early Life"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView_life_test"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_life_test"
+            android:layout_width="376dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="344dp"
+            android:fontFamily="serif-monospace"
+            android:text="Margaret Heafield Hamilton was born to Kenneth Heafield and Ruth Esther Heafield on August 17, 1936, in Paoli, Indiana. Following her family's move to Michigan, Margaret attended Hancock High School and graduated in 1954."
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_education"
+            app:layout_constraintTop_toBottomOf="@+id/textView_early_life" />
+
+        <TextView
+            android:id="@+id/textView_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="serif-monospace"
+            android:text="Education"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView_education_text"
+            app:layout_constraintTop_toBottomOf="@+id/textView_life_test" />
+
+        <TextView
+            android:id="@+id/textView_education_text"
+            android:layout_width="392dp"
+            android:layout_height="590dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="432dp"
+            android:fontFamily="serif-monospace"
+            android:text="Initially, in 1955, she studied mathematics at the University of Michigan before she transferred to Earlham College–in Richmond, Indiana–where her mother was once a student. In 1958, she graduated with a BA in mathematics and a minor in philosophy. During her time at Earlham, Florence Long, head of the math department, encouraged her to follow her desire of pursuing abstract mathematics and becoming a mathematics professor. Adding a minor in philosophy to her studies was inspired by her poet father and headmaster grandfather."
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_accomplishments"
+            app:layout_constraintTop_toBottomOf="@+id/textView_education" />
+
+        <TextView
+            android:id="@+id/textView_accomplishments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="72dp"
+            android:fontFamily="serif-monospace"
+            android:text="Accomplishments"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_education_text" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/use" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="282dp"
+            android:layout_height="373dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="76dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_education"
+            app:srcCompat="@drawable/edu" />
+
+        <TextView
+            android:id="@+id/textView_accomplishment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="serif-monospace"
+            android:text="Margaret Hamilton led a Nasa software team in the late 1960s and early ‘70s and helped the team write command and lunar modules used on the Apollo spacecraft that landed famous astronauts Neil Armstrong and Buzz Aldrin on the moon—for which she received NASA’s Exceptional Space Act Award (2003). For her extraordinary work, she was honored with the Presidential Medal of Freedom in 2016 by President Barack Obama. Furthermore, she co-founded a software company namely Higher Order Software in 1976 and Hamilton Technologies 10 years later. "
+            android:textColor="#000000"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="730dp"
+            android:layout_marginBottom="1106dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/divider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="87dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_accomplishment_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            app:srcCompat="@drawable/margacompld" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
